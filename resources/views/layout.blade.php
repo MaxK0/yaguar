@@ -66,7 +66,7 @@
                     </div>
                     <div class="footer__info__block">
                         <i class="fa-solid fa-clock"></i>
-                        <p>10.00 - 23.00 ч.</p>
+                        <p>08.00 - 22.00 ч.</p>
                     </div>
                     <div class="footer__info__block">
                         <i class="fa-solid fa-phone"></i>

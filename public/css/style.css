@@ -481,6 +481,7 @@ a:hover {
 }
 
 .about__image img {
+    width: 100%;
     border-radius: var(--border-radius);
 }
 
