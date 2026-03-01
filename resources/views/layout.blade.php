@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('fontawesome/css/all.min.css') }}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-{{--    <link rel="icon" href="{{ asset('img/logo.png') }}">--}}
+    <link rel="icon" href="{{ asset('img/ягуар.ico') }}">
     <script src="https://unpkg.com/imask"></script>
 </head>
 <body>
@@ -18,7 +18,7 @@
             <nav class="header__nav">
                 <div class="header__title">
                     <a href="{{ route('home') }}" class="link-nav link-title">
-                        Ягуар
+                        <img src="{{ asset('img/ягуар.svg') }}" alt="Ягуар">
                     </a>
                 </div>
                 <i id="header__menu" class="fa-solid fa-bars"></i>

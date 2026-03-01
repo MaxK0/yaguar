@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
 :root {
-    --color-main: #ebc5b2;
-    --color-additional: #000;
-    --color-acent-1: #ef4035;
+    --color-main: #fff;
+    --color-additional: #030303;
+    --color-acent-1: #B11A1A;
     --color-acent-2: #E31D65FF;
-    --color-bg: #1b1c1f;
+    --color-bg: #070707;
+    --color-btn-hover: #730000;
     --font-size-normal: 1.6rem;
     --font-size-large: 1.8rem;
     --font-size-small: 1.4rem;
@@ -136,7 +137,7 @@ a:hover {
 .link-nav {
     font-family: "Roboto Mono", monospace;
     font-size: var(--font-size-small);
-    color: var(--color-bg);
+    color: var(--color-main);
     opacity: 0.8;
 }
 
@@ -172,10 +173,10 @@ a:hover {
 
 .header {
     position: fixed;
-    height: 5rem;
+    height: 6rem;
     width: 100%;
-    background-color: var(--color-main);
-    color: var(--color-bg);
+    background-color: var(--color-bg);
+    color: var(--color-main);
     z-index: 20;
     top: 0;
     left: 0;
@@ -219,7 +220,7 @@ a:hover {
 }
 
 .header__title img {
-    width: 5.2rem;
+    width: 5rem;
 }
 
 .main {
@@ -230,8 +231,8 @@ a:hover {
 }
 
 .footer {
-    background-color: var(--color-main);
-    color: var(--color-bg);
+    background-color: var(--color-additional);
+    color: var(--color-main);
     font-size: var(--font-size-small);
     padding: 4rem 0;
 }
@@ -254,7 +255,7 @@ a:hover {
 
 .footer__info__block {
     display: flex;
-    gap: 0.5rem;
+    gap: 1rem;
     align-items: center;
 }
 
@@ -312,7 +313,8 @@ a:hover {
 }
 
 .btn-main:hover {
-    background-color: var(--color-acent-1);
+    border-color: var(--color-btn-hover);
+    background-color: var(--color-btn-hover);
     color: var(--color-main);
 }
 
@@ -388,6 +390,14 @@ a:hover {
     text-align: center;
 }
 
+.title__section h1 {
+    font-size: 5rem;
+}
+
+.title__yaguar {
+    font-size: 8rem;
+}
+
 .title__image {
     margin: 3rem 0;
 }
@@ -404,7 +414,7 @@ a:hover {
 }
 
 .gallery__section {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: var(--color-additional);
 }
 
 .gallery__preview {
@@ -442,8 +452,9 @@ a:hover {
 }
 
 .advantages__list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 3rem;
     margin-top: 3rem;
 }
@@ -451,8 +462,11 @@ a:hover {
 .advantage__item {
     text-align: center;
     padding: 2rem;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: var(--color-additional);
     border-radius: var(--border-radius);
+    flex: 1 1 36rem;
+    min-width: 36rem;
+    max-width: 1fr;
 }
 
 .advantage__item i {
@@ -546,7 +560,7 @@ a:hover {
 }
 
 .signup__form {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: var(--color-additional);
     padding: 3rem;
     border-radius: var(--border-radius);
 }

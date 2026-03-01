@@ -6,7 +6,10 @@
     <!-- Секция с общей информацией -->
     <section class="title__section">
         <div class="container">
-            <h1>Бойцовский клуб «Ягуар»</h1>
+            <h1>Бойцовский клуб
+                <br>
+                <span class="title__yaguar">Ягуар</span>
+            </h1>
             <p class="title__desc">Профессиональные тренировки для всех уровней подготовки</p>
             <a href="{{ route('signup') }}" class="btn-main">Записаться на тренировку</a>
         </div>
