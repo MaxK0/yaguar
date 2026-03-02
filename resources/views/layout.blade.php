@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>@yield('title', config('app.name'))</title>
     <meta name="description" content="Бойцовский клуб 'Ягуар'">
-    <link rel="stylesheet" href="{{ asset('css/style.css') }} . '?v=1'">
+    <link rel="stylesheet" href="{{ asset('css/style.css') . '?v=1' }}">
     <link rel="stylesheet" href="{{ asset('fontawesome/css/all.min.css') }}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="icon" href="{{ asset('img/ягуар.ico') }}">
