@@ -569,6 +569,10 @@ a:hover {
 
 /* Адаптивность */
 @media (max-width: 992px) {
+    .container {
+        width: 80%;
+    }
+
     .about__content,
     .signup__content {
         grid-template-columns: 1fr;
