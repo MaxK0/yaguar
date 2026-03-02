@@ -447,6 +447,10 @@ a:hover {
     gap: 2rem;
 }
 
+.gallery__grid .gallery__item {
+    width: auto;
+}
+
 .advantages__section {
     background-color: rgba(0, 0, 0, 0.1);
 }
@@ -579,6 +583,9 @@ a:hover {
     .gallery__item:last-child {
         margin-inline: auto;
     }
+    .gallery__grid .gallery__item {
+        width: auto;
+    }
 }
 
 @media (max-width: 992px) {
@@ -630,6 +637,9 @@ a:hover {
 
     .gallery__item {
         width: 100%;
+    }
+    .gallery__grid .gallery__item {
+        width: auto;
     }
 
     .footer__blocks {
