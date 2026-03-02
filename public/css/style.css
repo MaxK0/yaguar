@@ -448,7 +448,7 @@ a:hover {
 }
 
 .gallery__grid .gallery__item {
-    width: auto;
+    width: auto !important;
 }
 
 .advantages__section {
@@ -584,7 +584,7 @@ a:hover {
         margin-inline: auto;
     }
     .gallery__grid .gallery__item {
-        width: auto;
+        width: auto !important;
     }
 }
 
@@ -639,7 +639,7 @@ a:hover {
         width: 100%;
     }
     .gallery__grid .gallery__item {
-        width: auto;
+        width: auto !important;
     }
 
     .footer__blocks {
