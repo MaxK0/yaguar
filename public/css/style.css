@@ -501,7 +501,7 @@ a:hover {
 }
 
 .about__image img {
-    height: 30vh;
+    height: 30vw;
     border-radius: var(--border-radius);
 }
 
