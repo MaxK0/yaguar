@@ -413,10 +413,6 @@ a:hover {
     margin-bottom: 3rem;
 }
 
-.gallery__section {
-    background-color: var(--color-additional);
-}
-
 .gallery__preview {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
