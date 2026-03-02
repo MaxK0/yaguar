@@ -414,16 +414,20 @@ a:hover {
 }
 
 .gallery__preview {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     gap: 2rem;
     margin: 3rem 0;
 }
 
 .gallery__item {
+    min-width: 300px;
+    width: 32%;
+    max-width: 1fr;
+    height: 250px;
     overflow: hidden;
     border-radius: var(--border-radius);
-    height: 250px;
 }
 
 .gallery__item img {
@@ -568,6 +572,15 @@ a:hover {
 }
 
 /* Адаптивность */
+@media (max-width: 1430px) {
+    .gallery__item {
+        width: 48%;
+    }
+    .gallery__item:last-child {
+        margin-inline: auto;
+    }
+}
+
 @media (max-width: 992px) {
     .container {
         width: 80%;
@@ -617,6 +630,10 @@ a:hover {
 
     .header__ul {
         gap: 1rem;
+    }
+
+    .gallery__item {
+        width: 100%;
     }
 
     .footer__blocks {
