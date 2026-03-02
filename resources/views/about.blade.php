@@ -14,7 +14,7 @@
                 </div>
                 @if($photos->count() > 0)
                     <div class="about__image">
-                        <img src="{{ $photos->first()->url }}" alt="{{ $photos->first()->title }}">
+                        <img src="{{ asset('/img/photo_2025-10-06_16-50-38.jpg') }}" alt="Ягуар">
                     </div>
                 @endif
             </div>
