@@ -3,50 +3,33 @@
 @section('title', 'Галерея - Бойцовский клуб «Ягуар»')
 
 @section('content')
-    <section class="gallery__section">
-        <div class="container">
-            <h1>Галерея</h1>
-            @if($photos->count() > 0)
-                <div class="gallery__grid">
-                    @foreach($photos as $photo)
-                        <div class="gallery__item">
-                            <img src="{{ $photo->url }}" alt="{{ $photo->title }}">
-                        </div>
-                    @endforeach
-                </div>
-            @else
-                <p>Фотографии пока не загружены</p>
-            @endif
+    <section class="page-hero page-hero--compact">
+        <div class="container page-hero__container">
+            <p class="section-label">Галерея</p>
+            <h1>Атмосфера клуба</h1>
+            <p>Фотографии тренировок, зала и спортивной жизни бойцовского клуба «Ягуар».</p>
         </div>
     </section>
-@endsection
 
-@push('scripts')
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Инициализация Swiper для галереи
-            const swiper = new Swiper('.gallery__grid', {
-                slidesPerView: 1,
-                spaceBetween: 10,
-                pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true,
-                },
-                breakpoints: {
-                    640: {
-                        slidesPerView: 2,
-                        spaceBetween: 20,
-                    },
-                    768: {
-                        slidesPerView: 3,
-                        spaceBetween: 30,
-                    },
-                    1024: {
-                        slidesPerView: 3,
-                        spaceBetween: 30,
-                    },
-                },
-            });
-        });
-    </script>
-@endpush
+    <section class="gallery__section">
+        <div class="container">
+             <div class="gallery__grid">
+
+    <div class="gallery__item">
+        <img src="{{ asset('img/1.jpg') }}" alt="Фото клуба">
+    </div>
+
+    <div class="gallery__item">
+        <img src="{{ asset('img/2.jpg') }}" alt="Фото клуба">
+    </div>
+
+    <div class="gallery__item">
+        <img src="{{ asset('img/3.jpg') }}" alt="Фото клуба">
+    </div>
+
+    <div class="gallery__item">
+        <img src="{{ asset('img/4.jpg') }}" alt="Фото клуба">
+    </div>
+
+</div>
+
