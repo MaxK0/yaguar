@@ -41,27 +41,15 @@
             </div>
             <div class="photo-cards">
                 <article class="photo-card">
-                    @if($photos->count() > 0)
-                        <img src="{{ $photos->get(0)->url ?? asset('storage/photos/4966.jpg') }}" alt="Тренировочный зал">
-                    @else
-                        <img src="{{ asset('img/1.jpg') }}" alt="Тренировочный зал">
-                    @endif
+                    <img src="{{ asset('img/1.jpg') }}" alt="Тренировочный зал">
                     <div class="photo-card__content"><span>01</span><h3>Сильная тренировочная база</h3><p>Зал, инвентарь и условия для регулярных занятий и подготовки спортсменов.</p></div>
                 </article>
                 <article class="photo-card">
-                    @if($photos->count() > 1)
-                        <img src="{{ $photos->get(1)->url }}" alt="Тренеры клуба">
-                    @else
                     <img src="{{ asset('img/glavniitrener.jpg') }}" alt="Тренеры клуба">
-                    @endif
                     <div class="photo-card__content"><span>02</span><h3>Тренеры и наставничество</h3><p>Тренировочный процесс строится с учётом уровня подготовки и целей спортсмена.</p></div>
                 </article>
                 <article class="photo-card">
-                    @if($photos->count() > 2)
-                        <img src="{{ $photos->get(2)->url }}" alt="Групповые занятия">
-                    @else
-                        <img src="{{ asset('img/detyaphoto.jpg') }}"  alt="Групповые занятия">
-                    @endif
+                    <img src="{{ asset('img/detyaphoto.jpg') }}"  alt="Групповые занятия">
                     <div class="photo-card__content"><span>03</span><h3>Группы для разных возрастов</h3><p>Занятия подходят новичкам, детям, взрослым и спортсменам с опытом.</p></div>
                 </article>
             </div>
