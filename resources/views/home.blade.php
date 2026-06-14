@@ -5,7 +5,11 @@
 @section('content')
     <section class="hero hero--home">
         <div class="hero__bg">
-            <img src="{{ asset('img/photo_2025-10-06_16-50-38.jpg') }}" alt="Бойцовский клуб Ягуар">
+            @if($photos->count() > 0)
+                <img src="{{ $photos->first()->url }}" alt="Тренировка в клубе Ягуар">
+            @else
+                <img src="{{ asset('img/photo_2025-10-06_16-50-38.jpg') }}" alt="Бойцовский клуб Ягуар">
+            @endif
         </div>
         <div class="container hero__container">
             <div class="hero__content">
